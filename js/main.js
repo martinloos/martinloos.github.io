@@ -6,14 +6,10 @@ function getContainer(id)
   return container
 }
 
-birdFindsDestination()
+const searchParam = window.location.search
+birdFindsDestination(searchParam)
 
 window.onload = function() {
-if (!getContainer('big-nest').classList.contains('-hidden')) 
-{
-    console.log('discovered big nest')
-}
-
 if (!getContainer('nest-one').classList.contains('-hidden')) 
 {
     console.log('discovered nest one')

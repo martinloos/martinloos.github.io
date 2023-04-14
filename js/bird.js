@@ -4,18 +4,13 @@ function discover(id)
   container.classList.remove('-hidden')
 }
 
-export function birdFindsDestination() 
+export function birdFindsDestination(nest) 
 {
-  let nest = window.location.pathname;
-  if (nest !== '/') {
+  if (nest !== '') {
     let container = document.getElementById('home')
     container.classList.add('-hidden')
   }
-  if (nest.includes('big-nest')) 
-  {
-    discover('big-nest')
-  } 
-  else if (nest.includes('nest-one'))
+  if (nest.includes('nest-one'))
   {
     discover('nest-one')
   }
