@@ -1,4 +1,4 @@
-import { birdFindsDestination } from './bird';
+import { birdFindsDestination } from './bird.js';
 
 function getContainer(id) 
 {
