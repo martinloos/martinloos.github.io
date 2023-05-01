@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/modifiers.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/nest-one.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
@@ -28,12 +29,49 @@
   <meta http-equiv='pragma' content='no-cache'>
 
   <meta name="theme-color" content="#fafafa">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
-  <div id="home">home</div>
+  <div id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+          <div class="tile">
+            <div class="home-top-container">
+              <div class="home-icons">
+                <img src="img/pswrd-icon.png">            
+              </div>
+              <div class="home-pswrd-headline">
+                <span class="home-pswrd-headline-top">This content is password protected.</span>
+                <span class="home-pswrd-headline-bot">Please enter your password</span>
+              </div>
+            </div>
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="inp-label">Password</label>
+                <input type="password" class="form-control" >
+                <div class="input-group-addon"><i class="fa fa-eye"></i></div>
+              </div>
+            </div><!-- group -->
+            <div class="text-center button-container"><label class="btn btn-primary"> Unlock</label>
+            </div>
+          </form>
+            <div class="success" id="success">
+              <div class="circle-loader">
+              <div class="checkmark draw"></div>
+            </div><!-- circle -->
+            <h2>You did it!</h2>
+            <h2>Code: 050505</h2>
+            </div><!-- success-->
+          </div><!-- tile-->
+        </div> <!--col-6-->
+      </div><!-- row -->
+      </div><!-- container -->
+  </div>
   <div id="nest-one" class="-hidden">
     <h1># 1</h1>
     <div class="quote-container">
@@ -73,13 +111,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script type="module" src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
