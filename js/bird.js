@@ -12,4 +12,10 @@ export function birdFindsDestination(nest)
     container.classList.add('-hidden')
     discover('nest-one')
   }
+  if (nest.includes('nest-two'))
+  {
+    let container = document.getElementById('home')
+    container.classList.add('-hidden')
+    discover('nest-two')
+  }
 }
